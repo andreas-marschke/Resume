@@ -1,21 +1,39 @@
 % Created 2012-02-18 Sa 23:57
-\documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{graphicx}
-\usepackage{longtable}
-\usepackage{float}
-\usepackage{wrapfig}
-\usepackage{soul}
-\usepackage{amssymb}
-\usepackage{hyperref}
-\usepackage[german]{babel}
-\setlength{\parindent}{0pt}
-\usepackage[hang,flushmargin]{footmisc}
-\title{Andreas Marcshke}
-\date{}
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}  	% allow for utf8 encoding in document
+\usepackage[T1]{fontenc}     	% encoding for the font enables different hyphenation
+\usepackage{graphicx}	     	% \includegraphics 
+\usepackage{longtable}		% tables over page boundaries 
+\usepackage{float}		% allow boxing of figures / tables 
+\usepackage{wrapfig}		% text flows around figures
+\usepackage{soul}		% hyphenation and letterspacing 
+\usepackage{amssymb}		% symbols from mathematical fonts
+\usepackage{hyperref}		% used for references and links
+\usepackage[german]{babel}	% allow german text
+\usepackage[hang,flushmargin]{footmisc} % flush footnotes left
+\usepackage{lmodern} 		% use latern modern font
+\usepackage{color}		% make color definition 'sane'
+\usepackage{tabularx}
+\setlength{\parindent}{0pt}	% don't let paragraphs indent too deeply
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 
+\definecolor{lightblue}{RGB}{61,58,255}
+
+\hypersetup{
+	colorlinks=true,			% no color for links
+        pdftitle={Mr.},    			% title
+        pdfauthor={Andreas Marschke},     	% author
+        pdfsubject={Resume},   			% subject of the document
+	linkcolor=,         % color of internal links
+	citecolor=lightblue,        % color of links to bibliography
+	filecolor=lightblue,      % color of file links
+	urlcolor=lightblue           % color of external links
+}
 \pagestyle{empty}
+% - Config ends here -
+
+\title{\textbf{Andreas Marschke}}
+\date{}
 \begin{document}
 \maketitle
 
@@ -25,10 +43,8 @@ North Rhine-Westphalia \\
 Telephone: \texttt{(+49)170/3258483} \\
 E-Mail: \texttt{andreas.marschke@gmail.com}
 
-
+\thispagestyle{empty}
 \section*{Career Profile}
-
-
 \begin{itemize}
   \item[-] Currently second tier in the operating department as an apprentice
   \item[-] Heavily investing in open source and general IT education
@@ -37,24 +53,15 @@ E-Mail: \texttt{andreas.marschke@gmail.com}
 \end{itemize}
 
 \section*{Competencies}
-
-\thispagestyle{empty}
 \begin{itemize}
   \item[-] Experience in multiple programming languages such as:
     \begin{itemize}
-      \item[-] Perl
-      \item[-] \verb*|C/C++/C#|
-      \item[-] Delphi
-      \item[-] LISP
-      \item[-] Shell(bash,sh)
+      \item[] Perl, \verb*|C/C++/C#|, Delphi, LISP, Shell(bash,sh)
     \end{itemize}
 
   \item[-] Experience in various development plattforms
     \begin{itemize}
-      \item[-] Qt
-      \item[-] Mojolicious
-      \item[-] in the process of learning Django
-      \item[-] KDE
+      \item[] Qt, Mojolicious, Django, KDE
     \end{itemize}
   \item[-] Thorough knowledge of the Debian GNU/Linux operating
     system
@@ -64,22 +71,20 @@ E-Mail: \texttt{andreas.marschke@gmail.com}
 \end{itemize}
 
 \section*{Education}
-
-\begin{tabular}{@{ } l @{} p{3cm} @{} r @{ }}
-  Berufskolleg Uerdingen & & Krefeld, North Rhine-Westphalia \\
-  & & est. July 2013 \\
-\end{tabular}
+\begin{tabularx}{1\textwidth}{@{\extracolsep{\fill}} l @{ } r @{ }}
+  Berufskolleg Uerdingen & Krefeld, North Rhine-Westphalia \\
+  & est. July 2013 \\
+\end{tabularx}
 
 \begin{itemize}
   \item[-] Apprenticeship for IT specialist in systems integration
 \end{itemize} 
 
 \section*{Work Experience}
-
-\begin{tabular}{@{ } l @{} p{1.2cm} @{} r @{ }}
-  Via-Online GmbH (eBay affiliate) & & Krefeld, North Rhine-Westphalia\\
-  & & since October 2011 \\
-\end{tabular}
+\begin{tabularx}{1\textwidth}{@{\extracolsep{\fill}} l @{ } r @{ }}
+  Via-Online GmbH (eBay affiliate) & Krefeld, North Rhine-Westphalia\\
+  & since October 2011 \\
+\end{tabularx}
 
 \begin{itemize}
   \item[-] Continued apprenticeship as an IT specialist in
@@ -91,10 +96,10 @@ E-Mail: \texttt{andreas.marschke@gmail.com}
     planning of new facilitation of networking
 \end{itemize}
 
-\begin{tabular}{@{ } l @{} p{3.6cm} @{} r @{ }}
-  Credativ & & Mönchengladbach, North Rhine-Westphalia\\
-  & & Aug 2010 - Oct 2011 \\
-\end{tabular}
+\begin{tabularx}{1\textwidth}{@{\extracolsep{\fill}} l @{ } r @{ }}
+  Credativ & Mönchengladbach, North Rhine-Westphalia\\
+  & Aug 2010 - Oct 2011 \\
+\end{tabularx}
 
 \begin{itemize}
   \item[-] Apprentice as an IT specialist in systems integration
@@ -107,10 +112,10 @@ E-Mail: \texttt{andreas.marschke@gmail.com}
 
 \pagebreak
 
-\begin{tabular}{@{ } l @{} p{7.45cm} @{} r @{ }}
-  IKS & & Bitterfeld, Saxony-Anhalt \\
-  & & Aug 2009 - July 2010 \\
-\end{tabular}
+\begin{tabularx}{1\textwidth}{@{\extracolsep{\fill}} l @{ } r @{ }}
+  IKS & Bitterfeld, Saxony-Anhalt \\
+  & Aug 2009 - July 2010 \\
+\end{tabularx}
 
 \begin{itemize}
   \item[-] Internship as a systems integrator
