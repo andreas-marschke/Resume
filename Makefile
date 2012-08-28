@@ -1,7 +1,5 @@
 
-NAME=resume.en resume.de
-TEXSRCS=resume.en.tex resume.de.tex
-
+NAME=resume.en 
+TEXSRCS=resume.en.tex 
 include /usr/share/latex-mk/latex.gmk
-
 
